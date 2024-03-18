@@ -52,6 +52,12 @@ The server will start, and you can now make POST requests to `http://localhost:3
 
 ### Example Request
 
+```bash
+{
+  "prompt": "What are the most popular products?"
+}
+```
+
 Experiment with the SQL agent by running the code snippet below and asking the following questions (one at a time): 
 
 * What are the most popular products?
@@ -60,8 +66,39 @@ Experiment with the SQL agent by running the code snippet below and asking the f
 * How many narrow shoes come in pink?
 * Find me shoes that are in stock and available in size 15.
 
-```bash
-{
-  "prompt": "What are the most popular products?"
-}
+### Complext prompts
+
+1. High-Value Customers Report: -
+```
+Identify all customers who have spent more than $500 in total on orders. Include their name, total amount spent, and email address. Sort the results by total amount spent in descending order.
+```
+
+2. Product Popularity Report: -
+```
+List the top 10 most purchased products in the last year. For each product, show the product ID, total quantity sold, and total sales amount. Order the results by total quantity sold in descending order.
+```
+
+3. Customer Loyalty Insight: -
+```
+Generate a list of customers who have placed more than 5 orders since their first purchase. Include customer ID, name, email, and the total number of orders. Sort by the total number of orders in descending order.
+```
+
+4. Order Summary by Product:
+```
+Summarize total sales and number of orders per product for the last 6 months. Include the product name, total sales amount, and total number of orders. Order the results by total sales amount in descending order.
+```
+
+5. Frequent Customers:
+```
+Identify customers who have placed more than 3 orders. List their ID, name, and email. Sort the list alphabetically by name.
+```
+
+6. Annual Sales Trend Report:
+```
+For each month in the past year, calculate the total sales amount and the total number of orders. Present the data month by month, showing the trend of sales and orders over the year.
+```
+
+7. Detailed Order History for Specific Customer: -
+```
+Given user1@example.com. Display a detailed order history for a customer specified by their email address. For each order, show the order date, list of products purchased (including quantity and price per item), and the total order amount. Sort the orders by date, from newest to oldest.
 ```
